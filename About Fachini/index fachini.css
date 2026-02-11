@@ -1,64 +1,69 @@
-body { 
-    color: #000000;
+body {
+    color: #000;
     background-color: rgb(129, 124, 124);
-    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
 }
 
-ul { 
+.countainer {
+    padding: 0 40px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     align-items: center;
     padding: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 a {
    color: rgb(0, 0, 0);
    text-decoration: none;
-
 }
 
 a:hover {
-    color: rgb(140, 0, 255)
-    ; /* Cor ao passar o mouse (pode personalizar) */
+    color: rgb(140, 0, 255);
 }
 
-img{
-
+img {
     width: 160px;
     height: 170px;
     border-radius: 50%;
     border: 5px solid rgb(0, 0, 0);
-
-
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-h1{
-    color:black;
+h1 {
+    color: black;
 }
 
 .texto-junto {
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0;
+}
 
+main section {
+    margin-bottom: 24px;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 200px 0;
+    padding: 30px 0;
     text-align: center;
-    color: #fff;
 }
 
- section p1 {
-color: rgb(240, 236, 6)
- }
+.social-icons p {
+    margin: 8px 0;
+}
 
- .btn-logout {
+.btn-logout {
     display: block;
     margin: 1px auto 0;
     padding: 7px 20px;
@@ -75,21 +80,13 @@ color: rgb(240, 236, 6)
     color: black;
 }
 
-.countainer{
-    padding: 0 40px;
-}
-
-
 .curso-container {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    gap: 10px;
 }
-.curso-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
+
 .curso-container p {
     flex: 1;
     margin-right: 15px;
@@ -120,7 +117,6 @@ color: rgb(240, 236, 6)
     color: #080000;
 }
 
-
 .profile-menu {
     display: flex;
     align-items: center;
@@ -128,8 +124,16 @@ color: rgb(240, 236, 6)
     position: relative;
 }
 
+.profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
 .menu-toggle {
-    font-size: 30px;
+    font-size: 22px;
+    border: none;
+    background: transparent;
     cursor: pointer;
 }
 
@@ -143,7 +147,7 @@ color: rgb(240, 236, 6)
     padding: 10px;
     background-color: #000000;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 10;
 }
 
@@ -160,4 +164,19 @@ color: rgb(240, 236, 6)
 
 .menu li a:hover {
     background-color: #ff1e00;
+}
+
+@media (max-width: 760px) {
+    .countainer {
+        padding: 0 16px;
+    }
+
+    .curso-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .progress-container {
+        width: 100%;
+    }
 }
